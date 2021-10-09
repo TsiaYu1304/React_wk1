@@ -23,10 +23,20 @@
   .Irma{
       font-family: Vladimir Script;
       font-size: 1.7em;
-      margin-top:10px;
+      margin-top:10px; 
       text-align: right;
+      
   
   }
+  .title{
+    color:white;
+    position: absolute;
+     background-color: #333333;
+     text-align: end;
+    right:0em;
+     padding-right: 5em;
+   
+ }
   /*商品資訊*/
   
   .A_women{
@@ -328,12 +338,13 @@
   @media screen and (max-width:576px){
       .slider-for{
           width:100%;
-          margin-top:30px;
+          /* margin-top:30px; */
       }
       .slider-nav{
           height:540px;
       }
       /*footer的地的地的地的地的地的*/
+      
   
       .footer{
           height:33vw;
