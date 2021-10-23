@@ -1,12 +1,76 @@
-.mainpage{
+@import '~antd/dist/antd.css'; 
+ 
+/* RWD Container */
+.container {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin: auto;
+}
 
+/* sm */
+@media (min-width: 576px) { 
+  .container {
+    width: 540px;
+  }
+} 
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+} 
+/* lg */
+@media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+  } 
+  
+  /* xl */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+  } 
+  
+  /* xxl */
+  @media (min-width: 1600px) {
+    .container {
+      width: 1500px;
+    }
+  } 
+
+
+  .layout-header,
+  .layout-footer {
+    padding: 0;
+    height: auto;
+    width:auto;
+    line-height: 1.6;
+    background-color:white;
+  }
+ .layout-footer{
+     margin: 0;
+
+ }
+  
+  .main-layout {
+    min-height: 100vh;
+    background-color:white;
+  }
+  /* .layout-content {
+    background-color: #111828;
+  } */
+
+
+.mainpage{
   margin-top:6em;
   padding: 0;
   
-  }
-  
-  
-  
+  } 
+
   /*導覽列*/
   .line{
       width:40px;
@@ -20,21 +84,23 @@
   .margin-top{
       margin-top:30px;
   }
-  .Irma{
+  /* .Irma{
+      color: #ffffff;
       font-family: Vladimir Script;
       font-size: 1.7em;
       margin-top:10px; 
       text-align: right;
-      
-  
-  }
+  } */
   .title{
-    color:white;
+    color: #ffffff;
+    font-family: Vladimir Script;
+    font-size: 1.7em;
     position: absolute;
      background-color: #333333;
      text-align: end;
     right:0em;
      padding-right: 5em;
+     
    
  }
   /*商品資訊*/
@@ -189,6 +255,9 @@
   
   
   /*更多商品*/
+  .new{
+      margin-left:10%;
+  }
   .moreitems_title_text_ {
       margin-top:10%;
       font-family: Arial; 
@@ -197,10 +266,11 @@
       color:black;
   }
   .moreitems_pic{
+      
       width: 100%;
       height:auto;
       margin-top:100px;
-      display: flex;
+      display:flex;
       justify-content: center;
   }
   .moreitems_pic_set{
@@ -224,7 +294,7 @@
       margin:0;
       position: relative;
       padding-top: 1.1vw;
-      background-color: #333333;
+      background-color:#333333;
       height: 17vw;
   } 
   .footer_title{
@@ -266,14 +336,17 @@
       width: 13vw;
   }
   
+
+
+
   
-  @media screen and (max-width:992px){
+  /* @media screen and (max-width:992px){
       .data{
           margin-left:0px;
       }
   
-  }
-  @media screen and (max-width:768px){
+  } */
+  /* @media screen and (max-width:768px){
       .text{
           height:135px;
           display: flex;
@@ -309,7 +382,7 @@
           border-bottom:0px solid #b7b7b7;
   
       }
-      /*footer的地的地的*/
+      
   
       .footer{
           padding-left:27vw;
@@ -334,16 +407,16 @@
          
       }
    
-  }
-  @media screen and (max-width:576px){
+  } */
+  /* @media screen and (max-width:576px){
       .slider-for{
           width:100%;
-          /* margin-top:30px; */
+          
       }
       .slider-nav{
           height:540px;
       }
-      /*footer的地的地的地的地的地的*/
+     
       
   
       .footer{
@@ -355,4 +428,4 @@
          width: 21vw;
       }
   
-  }
+  } */
